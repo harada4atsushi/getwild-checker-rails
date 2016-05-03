@@ -4,7 +4,3 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-TopsController	/Users/harada/source_code/getwild-checker-rails/app/controllers/tops_controller.rb	/^class TopsController < ApplicationController$/;"	class	line:1
-show	/Users/harada/source_code/getwild-checker-rails/app/controllers/tops_controller.rb	/^  def show$/;"	method	line:2	class:TopsController
-judge	/Users/harada/source_code/getwild-checker-rails/app/controllers/tops_controller.rb	/^  def judge$/;"	method	line:6	class:TopsController
-training_set_params	/Users/harada/source_code/getwild-checker-rails/app/controllers/tops_controller.rb	/^    def training_set_params$/;"	method	line:28	class:TopsController
