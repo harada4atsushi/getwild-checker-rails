@@ -1,0 +1,33 @@
+.main-container {
+   background-color: white;
+   padding: 20px;
+   margin-top: 50px;
+   opacity: 0.9;
+   -webkit-border-top-left-radius: 20px;
+   -webkit-border-top-right-radius: 20px;
+   -webkit-border-bottom-right-radius: 20px;
+   -webkit-border-bottom-left-radius: 20px;
+   -moz-border-radius-topleft: 20px;
+   -moz-border-radius-topright: 20px;
+   -moz-border-radius-bottomright: 20px;
+   -moz-border-radius-bottomleft: 20px;
+}
+
+.getwild-text {
+  height: 50px !important;
+  font-size: 2em !important;
+}
+
+.btn-getwild {
+  font-size: 1.5em !important;
+  height: 50px !important;
+}
+
+.result {
+  font-size: 2.3em !important;
+  color: blue;
+}
+
+.table-basic {
+  background-color: white;
+}

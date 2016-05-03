@@ -1,0 +1,23 @@
+<h1>投稿一覧</h1>
+
+<table class="table table-bordered table-basic">
+  <thead>
+    <tr>
+      <th>テキスト</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @training_sets.each do |training_set| %>
+      <tr>
+        <td><%= training_set.text %></td>
+        <td>
+          <%= link_to 'GetWild', getwild_training_set_path(training_set), method: :patch, class: 'btn btn-primary' %>&nbsp;
+          <%= link_to 'not GetWild', not_getwild_training_set_path(training_set), method: :patch, class: 'btn btn-warning' %>
+          <%= link_to '削除', training_set_path(training_set), method: :delete, class: 'btn btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
