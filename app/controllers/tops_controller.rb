@@ -8,7 +8,8 @@ class TopsController < ApplicationController
     training_set.save
     @training_set = TrainingSet.new
 
-    output = `python learning/main_predict.py "#{training_set.text}"`
+    args = Shellwords.escape(training_set.text)
+    output = `python learning/main_predict.py "#{args}"`
     is_getwild = output.strip.last.to_i
     Rails.logger.debug("output: #{output}")
     Rails.logger.debug("result: #{is_getwild}")
