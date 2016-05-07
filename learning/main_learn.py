@@ -7,7 +7,7 @@ from sklearn.grid_search import GridSearchCV
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.externals import joblib
 from data_parser import DataParser
-from plotter import Plotter
+#from plotter import Plotter
 
 # featureを準備する
 #db = TinyDB('../db/development.json')
