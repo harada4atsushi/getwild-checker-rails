@@ -47,5 +47,5 @@ joblib.dump(svm_model, "models/svm_model")
 joblib.dump(vocabulary, 'vocabulary/vocabulary.pkl')
 
 # 学習曲線を描画する
-plotter = Plotter()
-plotter.plot(svm_model, feature_vectors, data_parser.labels)
+# plotter = Plotter()
+# plotter.plot(svm_model, feature_vectors, data_parser.labels)

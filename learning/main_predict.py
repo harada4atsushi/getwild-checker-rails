@@ -3,7 +3,6 @@
 import MeCab
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import sqlite3
 import sys
 from tinydb import TinyDB, Query
@@ -13,7 +12,6 @@ from sklearn.learning_curve import learning_curve
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.externals import joblib
 from data_parser import DataParser
-from plotter import Plotter
 from predicter import Predicter
 
 #db = TinyDB('development.json')
