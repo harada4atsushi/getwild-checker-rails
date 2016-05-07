@@ -1,6 +1,14 @@
 <div class="main-container">
   <h1 class="text-center">人工知能(AI)でGetWild診断</h1>
   <br />
+  <% if @result.present? %>
+    <h1 class="result text-center"><%= @result %></h1>
+    <p class="text-center"><a href="https://twitter.com/intent/tweet?button_hashtag=GetWild%E8%A8%BA%E6%96%AD&text=<%= @result %>" class="twitter-hashtag-button" data-size="large" data-url="http://getwild-checker.net">Tweet #GetWild%E8%A8%BA%E6%96%AD</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </p>
+  <% end %>
+  <br />
+  <br />
   <div class="example">
     例)<br />
     もっこりりょうちゃん => GetWild<br />
@@ -22,15 +30,6 @@
       <%= f.submit "is GetWild?", class: 'btn btn-primary btn-getwild' %>
     </div>
     <br class="clearfix"/>
-  <% end %>
-  <br />
-  <br />
-
-  <% if @result.present? %>
-    <h1 class="result text-center"><%= @result %></h1>
-    <p class="text-center"><a href="https://twitter.com/intent/tweet?button_hashtag=GetWild%E8%A8%BA%E6%96%AD&text=<%= @result %>" class="twitter-hashtag-button" data-size="large" data-url="http://getwild-checker.net">Tweet #GetWild%E8%A8%BA%E6%96%AD</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    </p>
   <% end %>
   <br />
   <br />
