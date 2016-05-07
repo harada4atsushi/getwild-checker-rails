@@ -34,6 +34,7 @@ except:
 
 # 分類させる
 sys.argv.pop(0)
+print sys.argv[0]
 predicter = Predicter()
 result = predicter.predict(svm_model, data_parser, sys.argv, vocabulary)
 print result
